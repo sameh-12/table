@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> test passcode</title>
+    
+</head>
+<body>
+    <script>
+        var passcode = '1';
+        
+        
+        function passcheck() {
+        
+        
+            if(document.getElementById("pass1").value != passcode) {
+                alert('wrong passcode, try again');
+                return false;
+        
+            }
+            if(document.getElementById('pass1').value == passcode) {
+                alert('correct passcode. click to enter webpage');
+            }
+        }
+        </script>
+<form class="passform"  action="https://flutter.dev/?gclid=Cj0KCQiAvqGcBhCJARIsAFQ5ke5o9-2BFaAK9YaLoG93C5H2q7V9eSEvy6j59lib5XegDkCYlcXwaAIaAtF0EALw_wcB&gclsrc=aw.ds" onsubmit=" return passcheck()">
+        passcode: <input type='password' required id="pass1">
+ <input type="submit">
+</form>
+</body>
+</html>
